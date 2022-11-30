@@ -16,6 +16,9 @@ public class ClockTimeTest
     private ClockTime clockTim1;
     private ClockTime clockTim2;
 
+    
+    
+
     /**
      * Default constructor for test class ClockTimeTest
      */
@@ -33,6 +36,7 @@ public class ClockTimeTest
     {
         clockTim1 = new ClockTime(11, 00, 00);
         clockTim2 = new ClockTime(11, 00, 00);
+        clockTim1.toString();
     }
 
     /**
@@ -63,7 +67,14 @@ public class ClockTimeTest
     {
         assertEquals("11:00:00", clockTim1.toString());
     }
+
+    @Test
+    public void testTwoClocks()
+    {
+        clockTim1.equals(clockTim2);
+    }
 }
+
 
 
 
